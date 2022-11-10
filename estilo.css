@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Noto Sans JP", sans-serif;
+  }
+  .ancho{
+    max-width: 1300px;
+    margin: auto;
+}
+.barras{
+  background-color: #28557a;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+.menu{
+  display: none;
+}
+header{
+  background-color: rgb(199, 199, 199);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  }
+ header figure{
+    max-width: 250px;
+}
+header figure img{
+  width: 100%;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+nav li a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid #28557a;
+ border-radius: 5px;
+ color: #28557a;
+}
+h2{
+  color: rgb(220, 174, 7);
+}
+section{
+  border: 2px solid #28557a;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+article{
+  max-width: 650px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+article a{
+  padding: 10px;
+  display: inline-block;
+  color: white;
+  background-color: brown;
+  width: 150px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+}
+section figure{
+  max-width: 550px;
+}
+section figure img{
+  width: 100%;
+}
+.cuadroblanco {
+  padding: 15px;
+}
+footer{
+  max-width: 1300px;
+  margin-top: 10px;
+  background-color: #28557a;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+/*MOVIL*/
+
+@media screen and (max-width:760px){
+  nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0;
+    border: 1px red solid;
+    display: none;
+  }
+  nav ul li{
+    width: 100%;
+  }
+  nav li a{
+    text-decoration: none;
+    display: block;
+    color: #28557a;
+    padding: 10px;
+    border: 0px #28557a solid;
+    border-radius: 0px;
+    border-bottom: 2px #28557a solid;
+  }
+  section{
+    flex-direction: column-reverse;
+  }
+  .menu{
+    display: block;
+  }
+}

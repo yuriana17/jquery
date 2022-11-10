@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name='description' content='Descripcion del sitio web' />
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="estilo.css">
+  <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <header class="ancho">
+        <figure>
+            <img src="imagenes/pullrequest-logo.svg" alt="">
+        </figure>
+    </header>
+    <div class="menu" id="cajamenu">
+        <i class=" barras fa-solid fa-bars"></i>
+    </div>
+        <nav class="ancho">
+            <ul id="cambio">
+             <li><a href="#">inicio</a></li>
+            <li><a href="#">Empresa</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Clientes</a></li>
+            <li><a href="#">Ubicacion</a></li>
+            <li><a href="#">contactanos</a></li>
+            </ul>
+        </nav>
+    <section class="ancho">
+        <article>
+            <h2>Creacion de paginas web</h2> <br>
+            <h3>curso basico de HTML5 Y CSS3</h3> <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi porro sunt minus numquam facere veritatis neque sit quibusdam! Possimus aut omnis maiores odio animi natus expedita eaque id ipsam? Pariatur?</p>
+            <br>
+            <a href="#">Leer mas</a>
+        </article>
+        <figure>
+            <img src="imagenes/foto_pullrequest.svg" alt="">
+        </figure>
+    </section>
+    <div class="cuadroblanco"></div>
+    <footer class="ancho">
+       <p>YURIANA CELIS</p>
+    </footer>
+
+    <script>
+        //menu desplegable
+        $("#cajamenu").click( function(){
+            $("#cambio").slideToggle();
+        })
+    </script>
+
+</body>
+</html>
